@@ -1,0 +1,132 @@
+
+* {
+  margin: 0%;
+  padding: 0%;
+  font-family: sans-serif;
+  transition: all 0.5s;
+}
+
+.navbar {
+  z-index: 4;
+  background-color: none;
+  position: fixed;
+  width: 100%;
+}
+
+.navbar form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar input {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+  padding: 1vmin 2vmax;
+  margin: 1vmin 0 1vmin 2vmax;
+  border-radius: none;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  border-radius: 5px 0 0 5px;
+  transition: all 0.5s;
+}
+
+.navbar input:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.navbar button {
+  background-color: rgb(0, 196, 49);
+  color: white;
+  font-weight: 550;
+  padding: 1vmin 2vmax;
+  margin: 1vmin 2vmax 1vmin 0;
+  border-radius: none;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  border-radius: 0 5px 5px 0;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+.navbar button:hover {
+  background-color: rgb(1, 240, 61);
+}
+
+
+.container {
+  background-color: black;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container::before {
+  content : "";
+  height: 100%;
+  width: 100%;
+  background-image: url("./bg.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  opacity: 0.6;
+}
+
+.weather {
+  z-index: 2;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2vmax;
+  border-radius:  1.5rem 0 1.5rem 0;
+}
+
+.weather1 {
+  font-size: 5rem;
+  padding: 2vmin;
+}
+
+.weather p {
+  font-size: 2rem;
+}
+
+.weather span {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.weather3 {
+  padding: 2vmin 0;
+}
+
+
+
+
+/* Footer styling */
+
+.footer {
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: rgb(203, 203, 203);
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  padding-bottom: 1vmin;
+}
+
+.footer>span {
+  color: rgb(215, 0, 0);
+  transition: all 0.5s;
+  cursor: pointer;
+}
+.footer>span:hover {
+  color: rgb(255, 0, 0);
+}
