@@ -8,15 +8,17 @@
 
 .navbar {
   z-index: 4;
-  background-color: none;
+  background-color: rgba(0,0,0,0.4);
   position: fixed;
   width: 100%;
+  padding: 2vmin 0;
 }
 
 .navbar form {
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 6;
 }
 
 .navbar input {
@@ -24,11 +26,9 @@
   color: white;
   padding: 1vmin 2vmax;
   margin: 1vmin 0 1vmin 2vmax;
-  border-radius: none;
   border: none;
   outline: none;
-  box-shadow: none;
-  border-radius: 5px 0 0 5px;
+  border-radius: 15px 0 0 15px;
   transition: all 0.5s;
 }
 
@@ -46,7 +46,7 @@
   border: none;
   outline: none;
   box-shadow: none;
-  border-radius: 0 5px 5px 0;
+  border-radius: 0 15px 15px 0;
   transition: all 0.5s;
   cursor: pointer;
 }
@@ -73,12 +73,12 @@
   background-size: cover;
   background-position: center;
   position: absolute;
-  opacity: 0.6;
+  opacity: 0.8;
 }
 
 .weather {
   z-index: 2;
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 0.15);
   color: white;
 
   display: flex;
@@ -113,7 +113,7 @@
 
 .footer {
   text-align: center;
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(0,0,0,0.5);
   color: rgb(203, 203, 203);
   position: fixed;
   bottom: 0px;
